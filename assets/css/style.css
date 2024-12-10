@@ -1,0 +1,87 @@
+body {
+  /* font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif; font-weight:600; font-stretch:condensed; */
+  /* font-style: italic; */
+  font-size: 2rem ;
+  
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/ocr-a-bt');
+
+                
+header{
+  /* background-color: aqua; */
+  width: 100vw;
+  height: 30px;
+  overflow-y: hidden;
+  overflow-x: scroll;    position: relative;
+}
+
+
+.automatic-scroll{
+  display: inline-block;
+    white-space: nowrap;
+  animation: scroll 5s linear infinite;
+}
+/* @keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+} */
+
+.issues-container {
+  display: flex;
+}
+
+section {
+  width: 100%;
+  height: calc(100vh - 30px);
+  overflow-x: scroll;
+  /* background-color: gray; */
+  /* border-left: 1px solid yellow;
+  border-right: 1px solid yellow; */
+  /* make each section equal width, when divided by the number of sections*/
+  /* each section has to be scrollable vertically on its own */
+}
+section:first-child, section:last-child {
+  border: none;
+
+}
+
+.overlay3{
+  position: fixed;
+  background-color: aqua;
+  opacity: 30%;
+  text-align: center;
+}
+/* #issue2{
+  width: 10%;
+} */
+img{
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+#issue2{
+  width: 10%;
+}
+
+.numberscontainer{
+  text-align: center;
+  background: rgb(255, 255, 255);
+  
+
+}
+.firstnumber{
+  text-align: center;
+  font-size: 10px;
+    background-color: rgb(181, 255, 9);
+}
+.secondnumber{
+  font-size: xx-large;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color:red;
+  }
+  /* probably use display flex to stack all the content vertically */
+  /* also would be good to have a sort of button on the bottom to swipe between issues horizontally*/
+}
