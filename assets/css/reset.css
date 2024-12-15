@@ -27,7 +27,6 @@ cite,
 code,
 del,
 dfn,
-em,
 img,
 ins,
 kbd,
@@ -36,7 +35,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -90,7 +88,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
+a{
+  text-decoration: inherit;
+  color: inherit;
+}
 article,
 aside,
 details,
