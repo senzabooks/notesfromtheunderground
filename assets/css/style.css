@@ -121,11 +121,6 @@ section:hover > .overlay {
 
 }
 
-.morse{
-  text-align: center;
-  letter-spacing: -15%;
-  background-color: blueviolet;
-}
 
 
 
@@ -133,8 +128,7 @@ section:hover > .overlay {
   body {
     background-color:red;
   }
-  /* probably use display flex to stack all the content vertically */
-  /* also would be good to have a sort of button on the bottom to swipe between issues horizontally*/
+
 }
 
 .prevent-select {
