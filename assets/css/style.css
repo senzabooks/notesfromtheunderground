@@ -125,12 +125,24 @@ section:hover > .overlay {
 
 
 @media only screen and (max-width: 600px) {
+  
+  html{
+    --top-bar: 2rem;
+  }
+  body {
+    font-size: 1.6rem;
+  }
   #issue1{
     width: 70%
-  }
   } #issue2, #issue3{
     width: 15%;
   }
+  .issue3-image{
+    width: 3rem;
+  }
+  
+  }
+ 
 
 
 .prevent-select {
