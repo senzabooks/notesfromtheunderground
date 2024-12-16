@@ -48,7 +48,7 @@ section:first-child, section:last-child {
 
 
 .overlay{
-  display:none;
+  display: none;
   position: fixed;
   width: inherit;
   height: 100%;
