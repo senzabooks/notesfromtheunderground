@@ -88,10 +88,12 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 a{
   text-decoration: inherit;
   color: inherit;
 }
+
 article,
 aside,
 details,
