@@ -1,19 +1,30 @@
 html{
-  --top-bar: 2.1rem;
+  --top-bar: 2.8rem;
 }
 
 body {
-  font-size: 2rem ;
+  max-height: 100vh;
+  font-size: 2.2rem ;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -2%;
+  line-height: 117%;
+} 
+
+a:hover{
+  color:#0040e4;
 }
 
                 
 header{
   /* background-color: aqua; */
+  padding-left: 0.5rem;
+  position: relative;
   width: 100vw;
   height: var(--top-bar);
   overflow-y: hidden;
   overflow-x: scroll; 
   white-space: nowrap;  
+
 }
 
 
@@ -29,12 +40,14 @@ header{
 
 .issues-container {
   display: flex;
+  height: calc(100vh - var(--top-bar));
 }
 
 section {
   height: calc(100vh - var(--top-bar));
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-top: calc(0.2 * var(--top-bar));
   /* background-color: gray; */
   /* border-left: 1px solid yellow;
   border-right: 1px solid yellow; */
@@ -63,12 +76,25 @@ section:first-child, section:last-child {
 .overlay-name{
   line-height: calc(100vh - var(--top-bar));
   font-family:sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
+
 }
+
+.active-nametag{
+  text-decoration: underline;
+}
+
+.coming-soon-nametag{
+  cursor:not-allowed;
+}
+
 .section-nametag{
   font-family:sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
+  /* transition: 1s; */
 }
+
+
 
 section:hover > .overlay {
   display:none;
@@ -77,8 +103,7 @@ section:hover > .overlay {
 
 
 #issue1{
-  width: 60%;
-
+  width: 40%;
 }
 
 .note{
@@ -86,6 +111,11 @@ section:hover > .overlay {
   margin-left: 10%;
   line-height: 1.2; */
   margin-top: 2rem;
+}
+
+.indent-note{
+  margin-top: 2rem;
+  margin-left: 5rem;
 }
 
 .interview-1, .interview-2{
@@ -98,7 +128,7 @@ section:hover > .overlay {
 
 
 #issue2{
-  width: 6%;
+  width:30%;
 }
 
 .numbers-container{
@@ -106,7 +136,7 @@ section:hover > .overlay {
 }
 
 #issue3{
-  width: 34%;
+  width:30%;
 }
 
 .issue3-image{
@@ -117,10 +147,29 @@ section:hover > .overlay {
   margin-bottom: 5rem;
 }
 
-.issue3-image:first-child{
+.screensaver-style{
+  background-color: black;
+  
+}
+.screensaver-icon{
+  
+  color: #ffffff;
+  line-height: normal;
+  animation: oscillate 2s linear forwards infinite alternate;
+}
+
+@keyframes oscillate {
+  100% {
+    transform: translateX(1rem);
+  }
+}
+
+
+
+/* .issue3-image:first-child{
   margin-top: 5rem;
 
-}
+} */
 
 
 
