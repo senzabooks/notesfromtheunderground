@@ -261,13 +261,9 @@ section:hover > .overlay {
   overflow-y: scroll;
 }
 
-.welcome-close{
-display: flex;
-} 
 
 .close-button {
   position: relative;
-  bottom: 0.6rem;
  cursor: pointer;
 
 }
