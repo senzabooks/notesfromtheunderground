@@ -161,18 +161,47 @@ section:hover > .overlay {
   background-color: black;
   
 }
-.screensaver-icon{
-  
+.screensavers{
+  position: fixed;
   color: #ffffff;
-  line-height: normal;
-  animation: oscillate 2s linear forwards infinite alternate;
+  left: 0%;
+   animation: screensavers 2s linear forwards infinite alternate;
+  
 }
 
-@keyframes oscillate {
+@keyframes screensavers {
+  /* 20%{
+    transform: translate(4vw, 0);
+    
+  }
+  40%{
+    transform: translate(4vw, -4vw);
+   
+  }
+
+  60%{
+    transform: translate(0, -4vw);
+   
+  }
+
+  80%{
+    transform: translate(0, -8vw);
+   
+  }
+
+  100%{
+    transform: translate(4vw, -8vw);
+    
+  }*/
+
   100% {
-    transform: translateX(1rem);
+    
+    transform: translate(3rem,0);
+
   }
 }
+
+
 
 
 
@@ -209,4 +238,40 @@ section:hover > .overlay {
   -webkit-user-select: none; 
   -ms-user-select: none; 
   user-select: none; 
+}
+
+
+#welcome {
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 2rem;
+  width: calc(100vw - 4rem);
+  margin: auto;
+  border: none;
+  max-height: 50vh;
+  background:#ffffff;
+  filter: drop-shadow(0 0 2rem #eaeaea);
+}
+
+.welcome-info{
+  width: 90%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.welcome-close{
+display: flex;
+} 
+
+.close-button {
+  position: relative;
+  bottom: 0.6rem;
+ cursor: pointer;
+
+}
+
+#welcome:target {
+  display: none;
 }
