@@ -26,7 +26,7 @@ a:hover{
 
                 
 header{
-  /* background-color: aqua; */
+ 
   padding-left: 0.5rem;
   position: relative;
   width: 100vw;
@@ -48,7 +48,7 @@ header{
   to { transform: translateX(-100%); }
 } */
 
-.issues-container {
+.sections-container {
   display: flex;
   height: calc(100vh - var(--top-bar));
 }
@@ -58,37 +58,15 @@ section {
   overflow-y: scroll;
   overflow-x: hidden;
   padding-top: calc(0.2 * var(--top-bar));
-  /* background-color: gray; */
-  /* border-left: 1px solid yellow;
-  border-right: 1px solid yellow; */
-  /* make each section equal width, when divided by the number of sections*/
-  /* each section has to be scrollable vertically on its own */
 }
+
 section:first-child, section:last-child {
   border: none;
 
 }
 
 
-.overlay{
-  display: none;
-  position: fixed;
-  width: inherit;
-  height: 100%;
-  
-  background-color: rgb(255, 255, 255);
-  
-  pointer-events:none;
-  text-align: center;
-  
 
-}
-.overlay-name{
-  line-height: calc(100vh - var(--top-bar));
-  font-family:sans-serif;
- /* font-weight: bold; */
- 
- } 
 
 .active-nametag{
   text-decoration: underline;
@@ -100,8 +78,7 @@ section:first-child, section:last-child {
 
 .section-nametag{
   font-family:sans-serif;
-  /* font-weight: bold; */
-  /* transition: 1s; */
+
 }
 
 
@@ -112,14 +89,11 @@ section:hover > .overlay {
 
 
 
-#issue1{
-  width: 40%;
+#section1{
+  width: 30%;
 }
 
 .note{
-  /* font-size: 1rem;
-  margin-left: 10%;
-  line-height: 1.2; */
   margin-top: 2rem;
 }
 
@@ -137,19 +111,19 @@ section:hover > .overlay {
 
 
 
-#issue2{
-  width:30%;
+#section2{
+  width:40%;
 }
 
 .numbers-container{
   text-align: center;
 }
 
-#issue3{
+#section3{
   width:30%;
 }
 
-.issue3-image{
+.section3-image{
   width: 5rem;
   display: block;
   margin-left: auto;
@@ -205,13 +179,6 @@ section:hover > .overlay {
 
 
 
-/* .issue3-image:first-child{
-  margin-top: 5rem;
-
-} */
-
-
-
 
 @media only screen and (max-width: 600px) {
   
@@ -221,12 +188,12 @@ section:hover > .overlay {
   body {
     font-size: 1.6rem;
   }
-  #issue1{
+  #section1{
     width: 70%
-  } #issue2, #issue3{
+  } #section2, #section3{
     width: 15%;
   }
-  .issue3-image{
+  .section3-image{
     width: 3rem;
   }
   
