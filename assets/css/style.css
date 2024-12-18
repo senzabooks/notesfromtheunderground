@@ -14,6 +14,16 @@ a:hover{
   color:#0040e4;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #cecece;
+  background: white;
+}
+
+::selection {
+  color: #cecece;
+  background: white;
+}
+
                 
 header{
   /* background-color: aqua; */
