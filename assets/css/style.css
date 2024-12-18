@@ -188,9 +188,9 @@ section:hover > .overlay {
   body {
     font-size: 1.6rem;
   }
-  #section1{
+  #section2{
     width: 70%
-  } #section2, #section3{
+  } #section1, #section3{
     width: 15%;
   }
   .section3-image{
