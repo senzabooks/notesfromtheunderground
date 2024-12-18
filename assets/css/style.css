@@ -86,9 +86,9 @@ section:first-child, section:last-child {
 .overlay-name{
   line-height: calc(100vh - var(--top-bar));
   font-family:sans-serif;
-  /* font-weight: bold; */
-
-}
+ /* font-weight: bold; */
+ 
+ } 
 
 .active-nametag{
   text-decoration: underline;
